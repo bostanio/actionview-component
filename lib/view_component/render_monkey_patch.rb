@@ -3,10 +3,6 @@
 module ViewComponent
   module RenderMonkeyPatch # :nodoc:
     def self.included(base)
-      # Protect from trying to augment modules that appear
-      # as the result of adding other gems.
-      return if base != ActionController::Base
-
       base.class_eval do
         alias_method_chain :render, :view_component
       end
