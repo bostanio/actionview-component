@@ -8,6 +8,10 @@
 
     *Joel Hawksley*
 
+
+* Do not capture the block of a component if `render?` is false
+  * Vincent Rolea*
+
 # 2.18.1
 
 * Fix bug where previews didn't work when monkey patch was disabled.

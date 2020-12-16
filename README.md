@@ -1031,10 +1031,10 @@ ViewComponent is built by:
 |@johannesengl|@czj|@mrrooijen|@bradparker|@mattbrictson|
 |Berlin, Germany|Paris, France|The Netherlands|Brisbane, Australia|San Francisco|
 
-|<img src="https://avatars.githubusercontent.com/mixergtz?s=256" alt="mixergtz" width="128" />|<img src="https://avatars.githubusercontent.com/jules2689?s=256" alt="jules2689" width="128" />|
-|:---:|:---:|
-|@mixergtz|@jules2689|
-|Medellin, Colombia|Toronto, Canada|
+|<img src="https://avatars.githubusercontent.com/mixergtz?s=256" alt="mixergtz" width="128" />|<img src="https://avatars.githubusercontent.com/jules2689?s=256" alt="jules2689" width="128" />|<img src="https://avatars.githubusercontent.com/virolea?s=256" alt="virolea" width="128" />
+|:---:|:---:||:---:|
+|@mixergtz|@jules2689|@virolea|
+|Medellin, Colombia|Toronto, Canada|Nantes, France|
 
 ## License
 

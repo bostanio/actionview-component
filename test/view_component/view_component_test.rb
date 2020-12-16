@@ -645,4 +645,10 @@ class ViewComponentTest < ViewComponent::TestCase
 
     assert_text("http://assets.example.com")
   end
+
+  def test_does_not_capture_block_if_render_is_false
+    result = render_inline(ConditionalRenderComponent.new(should_render: false)) do
+      raise
+    end
+  end
 end
