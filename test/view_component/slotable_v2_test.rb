@@ -366,18 +366,29 @@ class SlotsV2sTest < ViewComponent::TestCase
 
   def test_renders_one?
     assert_equal(true, SlotsV2Component.renders_one?(:title))
+    assert_equal(false, SlotsV2Component.renders_one?(:tabs))
+    assert_equal(false, SlotsV2Component.renders_one?(:tab))
     assert_equal(false, SlotsV2Component.renders_one?(:junk))
   end
 
   def test_renders_many?
+    assert_equal(false, SlotsV2Component.renders_many?(:title))
     assert_equal(true, SlotsV2Component.renders_many?(:tabs))
     assert_equal(false, SlotsV2Component.renders_many?(:tab))
     assert_equal(false, SlotsV2Component.renders_many?(:junk))
   end
 
   def test_renders_many_item?
-    assert_equal(true, SlotsV2Component.renders_many_item?(:tab))
+    assert_equal(false, SlotsV2Component.renders_many_item?(:title))
     assert_equal(false, SlotsV2Component.renders_many_item?(:tabs))
+    assert_equal(true, SlotsV2Component.renders_many_item?(:tab))
     assert_equal(false, SlotsV2Component.renders_many_item?(:junk))
+  end
+
+  def test_renders_slot?
+    assert_equal(true, SlotsV2Component.renders_slot?(:title))
+    assert_equal(true, SlotsV2Component.renders_slot?(:tabs))
+    assert_equal(true, SlotsV2Component.renders_slot?(:tab))
+    assert_equal(false, SlotsV2Component.renders_slot?(:junk))
   end
 end

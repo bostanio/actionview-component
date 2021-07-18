@@ -155,6 +155,10 @@ module ViewComponent
         plural_slot_name != slot_name && renders_many?(plural_slot_name)
       end
 
+      def renders_slot?(slot_name)
+        renders_one?(slot_name) || renders_many?(slot_name) || renders_many_item?(slot_name)
+      end
+
       # Clone slot configuration into child class
       # see #test_slots_pollution
       def inherited(child)
